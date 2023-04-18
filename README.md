@@ -1,2 +1,2 @@
 # laLibs
-just some stuff i use more or less often
+just some stuff i keep using all the time
