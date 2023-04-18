@@ -81,7 +81,7 @@ extern "C" {
         }
     }
 
-    void luaSetGlobalBool(lua_State* L, const char* var, bool val) {
+    static inline void luaSetGlobalBool(lua_State* L, const char* var, bool val) {
         if (L != NULL) {
             lua_pushglobaltable(L);
             lua_pushboolean(L, val);
@@ -90,7 +90,7 @@ extern "C" {
         }
     }
 
-    void luaSetGlobalNumber(lua_State* L, const char* var, float val) {
+    static inline void luaSetGlobalNumber(lua_State* L, const char* var, float val) {
         if (L != NULL) {
             lua_pushglobaltable(L);
             lua_pushnumber(L, val);
